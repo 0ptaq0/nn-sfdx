@@ -1,7 +1,11 @@
 {
-  "orgName": "maciej company",
+  "orgName": "Maciej Ptak's Company",
   "edition": "Developer",
-  "features": ["EnableSetPasswordInApi"],
+  "features": [
+    "EnableSetPasswordInApi",
+    "FSCServiceProcess",
+    "PersonAccounts"
+  ],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true

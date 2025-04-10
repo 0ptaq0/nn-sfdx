@@ -12,3 +12,19 @@ account record.
     c. Open the scratch org environment on the browser after completion of the script.
 
 1. sf project generate --name nn-test
+2. Created developer org
+    In setup Enable Dev Hub and Enable Source Tracking in Developer and Developer Pro Sandboxes
+    Added FSCServiceProcess feature
+sf config set target-dev-hub=PRIV-DEV
+
+sf org create scratch \
+    --target-dev-hub PRIV-DEVHUB \
+    --definition-file config/project-scratch-def.json \
+    --set-default \
+    --duration-days 3 \
+    --wait 30 \
+    --alias NN-scratch
+
+sf org open --target-org NN-scratch
+
+sf apex run --file scripts/apex/json.apex
