@@ -1,0 +1,14 @@
+1. Create a repository in github with source format metadata project initiated in the
+repository
+2. Create a configuration file in the repository that can be used to create a scratch org
+development environment. The scratch org created from the file should be Financial
+Services Cloud based.
+3. Create an apex class in the repository that queries Person Aaccounts and prints out the
+accounts in debug in JSON format with the account id as the key and the value being the
+account record.
+4. Create a bash script that does the following:
+    a. Creates a scratch org environment
+    b. Deploys the apex class and runs related apex tests
+    c. Open the scratch org environment on the browser after completion of the script.
+
+1. sf project generate --name nn-test
